@@ -1,99 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Rainy Days - Outdoor clothing and gear">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rainy Days</title>
-        <link rel="icon" href="../Assignment/Fav icons/favicon-32x32.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-top">
-                <a href="index.html" class="logo"> 
-                    <img src="images/Rainy days/RainyDays_Logo.png" alt="Rainy Days Logo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rainy Days offers outdoor clothing and jackets for every kind of weather.">
+    <title>Rainy Days | Outdoor Clothing</title>
+    <link rel="icon" href="../Assignment/Fav icons/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Allows keyboard users to skip repeated navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo" aria-label="Rainy Days home"> 
+                <img src="images/Rainy days/RainyDays_Logo.png" alt="">
+            </a>
+
+            <form class="search-bar" role="search" action="store.html" method="get">
+                <label class="visually-hidden" for="site-search"> Search products </label>
+
+                <input type="search" id="site-search" name="q" placeholder="Search products...">
+
+                <button type="submit" aria-label="Search">
+                    <span aria-hidden="true">⌕</span>
+                </button>
+            </form>
+
+            <div class="header-icons">
+                <a href="cart.html" class="cart-icon"
+                   aria-label="Shopping cart">
+                    <img src="images/shopping-cart.svg" alt="">
                 </a>
-                <form class="search-bar">
-                    <input type="search" placeholder="Search...">
-                    <button type="submit">⌕</button>
-                </form>
-                <div class="header-icons">
-                    <a href="cart.html" class="cart-icon">
-                        <img src="images/shopping-cart.svg" alt="Cart Icon">
-                    </a>
-                    <a href="profile.html" class="profile-icon">
-                        <img src="images/circle-user-round.svg" alt="Profile Icon">
-                    </a>
-                </div>
+
+                <a href="profile.html" class="profile-icon"
+                   aria-label="Your profile">
+                    <img src="images/circle-user-round.svg" alt="">
+                </a>
             </div>
-            <div class="divider"></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="hero">
-            <img src="images/Hero-Image.jpg" alt="Hiker exploring a snowy mountain landscape">
-                <div class="hero-text">
-                    <h1>Jackets for any weather</h1>
-                    <p>Stay warm, dry and comfortable no matter the adventure!</p>
-                </div>
-                <a href="store.html" class="hero-button">Explore our collection</a>
-            </section>
-            <section class="featured-products">
-                <div class="section-heading">
-                    <h2>Featured Products</h2>
-                    <a href="store.html" class="view-all">View All</a>
-                </div>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <img src="images/Rainy days/RainyDays_Jacket1.jpg" alt="Product 1">
-                        <div class="product-info">
-                            <h3>Product 1</h3>
-                            <p>Waterproof | Warm</p>
-                            <p class="product-price">2 499 kr</p>
-                            <a href="product1.html" class="cart-button">View Product</a>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <img src="images/Rainy days/RainyDays_Jacket2.jpg" alt="Product 2">
-                        <div class="product-info">
-                            <h3>Product 2</h3>
-                            <p>Waterproof | Warm</p>
-                            <p class="product-price">1 499 kr</p>
-                            <a href="product2.html" class="cart-button">View Product</a>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <img src="images/Rainy days/RainyDays_Jacket3.jpg" alt="Product 3">
-                        <div class="product-info">
-                            <h3>Product 3</h3>
-                            <p>Cool | Sporty</p>
-                            <p class="product-price">1 359 kr</p>
-                            <a href="product3.html" class="cart-button">View Product</a>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <img src="images/Rainy days/RainyDays_Jacket4.jpg" alt="Product 4">
-                        <div class="product-info">
-                            <h3>Product 4</h3>
-                            <p>Windproof | Light</p>
-                            <p class="product-price">699 kr</p>
-                            <a href="product4.html" class="cart-button">View Product</a>
-                        </div>
-                    </article>
-            </section>
-        </main>
-        <footer class="site-footer">
-            <p>&copy; 2026 Rainy Days. All rights reserved.</p>
-        </footer>
-    </body>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
+            <img src="images/Hero-Image.jpg"
+                 alt="A hiker exploring a snowy mountain landscape">
+
+            <div class="hero-text">
+                <h1 id="hero-heading">Jackets for any weather</h1>
+                <p>Stay warm, dry and comfortable no matter the adventure!</p>
+            </div>
+
+            <a href="store.html" class="hero-button">Explore our collection</a>
+        </section>
+
+        <section class="featured-products" aria-labelledby="products-heading">
+
+            <div class="section-heading">
+                <h2 id="products-heading">Featured Products</h2>
+                <a href="store.html" class="view-all"> View all products</a>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="images/Rainy days/RainyDays_Jacket1.jpg" alt="Product 1 jacket">
+
+                    <div class="product-info">
+                        <h3>Product 1</h3>
+                        <p>Waterproof and warm</p>
+                        <p class="product-price">2 499 kr</p>
+                        <a href="product.html" class="cart-button">View Product 1</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/Rainy days/RainyDays_Jacket2.jpg" alt="Product 2 jacket">
+
+                    <div class="product-info">
+                        <h3>Product 2</h3>
+                        <p>Waterproof and warm</p> 
+                        <p class="product-price">1 499 kr</p>
+                        <a href="product.html" class="cart-button"> View Product 2</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/Rainy days/RainyDays_Jacket3.jpg" alt="Product 3 jacket">
+
+                    <div class="product-info">
+                        <h3>Product 3</h3>
+                        <p>Cool and sporty</p>
+                        <p class="product-price">1 359 kr</p>
+                        <a href="product.html" class="cart-button">View Product 3</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/Rainy days/RainyDays_Jacket4.jpg" alt="Product 4 jacket">
+
+                    <div class="product-info">
+                        <h3>Product 4</h3>
+                        <p>Windproof and lightweight</p>
+                        <p class="product-price">699 kr</p>
+                        <a href="product.html" class="cart-button">View Product 4</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Rainy Days. All rights reserved.</p>
+    </footer>
+</body>
 </html>
