@@ -451,20 +451,80 @@ header nav a.active {
 
 /*_____________________________________ Footer _____________________________________*/
 .site-footer {
-    padding: 20px;
+    padding: 25px 40px;
     background:
-        radial-gradient(
-            ellipse at 15% 10%,
-            #31938c 0%,
-            transparent 58%
-        ),
-        radial-gradient(
-            ellipse at 85% 90%,
-            #216e73 0%,
-            transparent 65%
-        ),
+        radial-gradient(ellipse at 15% 10%, #31938c 0%, transparent 58%),
+        radial-gradient(ellipse at 85% 90%, #216e73 0%, transparent 65%),
         #0A3641;
-    text-align: center;
+    color: #fff;
+}
+
+/* Footer main content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Footer logo */
+.footer-logo img {
+    display: block;
+    width: 150px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+/* Footer navigation */
+.footer-navigation {
+    display: flex;
+    gap: 70px;
+}
+
+/* Footer sections */
+.footer-section h2 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #d3e5e8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer divider */
+.footer-divider {
+    height: 1px;
+    margin: 25px 0 15px;
+    background-color: #19788da6;
+}
+
+/* Footer bottom */
+.footer-bottom p {
+    margin: 0;
+    color: #d3e5e8;
+    font-size: 11px;
+    text-align: left;
 }
 
 /* Accessibility: Skip link and visually hidden elements */
