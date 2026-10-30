@@ -18,44 +18,76 @@
     </a>
 
     <header>
+
+        <!-- Header top -->
         <div class="header-top">
-            <a href="index.html" class="logo" aria-label="Rainy Days home"> 
+
+            <!-- Logo -->
+            <a href="index.html" class="logo" aria-label="Rainy Days home">
                 <img src="images/Rainy days/RainyDays_Logo.png" alt="">
             </a>
 
+            <!-- Search bar -->
             <form class="search-bar" role="search" action="store.html" method="get">
-                <label class="visually-hidden" for="site-search"> Search products </label>
+                <label class="visually-hidden" for="site-search">Search products</label>
 
-                <input type="search" id="site-search" name="q" placeholder="Search products...">
+                <input
+                    type="search"
+                    id="site-search"
+                    name="q"
+                    placeholder="Search products..."
+                >
 
                 <button type="submit" aria-label="Search">
                     <span aria-hidden="true">⌕</span>
                 </button>
             </form>
 
+            <!-- Header icons -->
             <div class="header-icons">
-                <a href="cart.html" class="cart-icon"
-                   aria-label="Shopping cart">
+
+                <!-- Shopping cart -->
+                <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
                     <img src="images/shopping-cart.svg" alt="">
                 </a>
 
-                <a href="profile.html" class="profile-icon"
-                   aria-label="Your profile">
+                <!-- User profile -->
+                <a href="profile.html" class="profile-icon" aria-label="Your profile">
                     <img src="images/circle-user-round.svg" alt="">
                 </a>
+
             </div>
         </div>
 
+        <!-- Header divider -->
         <div class="divider" aria-hidden="true"></div>
+        
+                <!-- Header navigation -->
+        <div class="header-navigation">
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About us</a></li>
-            </ul>
-        </nav>
+            <!-- Product categories -->
+            <nav class="category-nav" aria-label="Product categories">
+                <ul>
+                    <li><a href="store.html">Women</a></li>
+                    <li><a href="store.html">Men</a></li>
+                    <li><a href="store.html">Children</a></li>
+                    <li><a href="store.html">Outdoor Gear</a></li>
+                    <li><a href="store.html">Outlet</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
     </header>
 
     <main id="main-content">

@@ -112,28 +112,43 @@ header {
 }
 
 /*_____________________________________ Navigation _____________________________________*/
-header nav {
+/* Navigation container */
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
     margin-top: 10px;
     margin-bottom: 3px;
 }
 
-header nav ul {
+/* Navigation lists */
+.header-navigation nav ul {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 25px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-header nav a {
-    margin: 0 30px;
+/* Navigation links */
+.header-navigation nav a {
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     text-decoration: none;
 }
 
-header nav a.active {
+/* Active page */
+.header-navigation nav a.active {
     border-bottom: 2px solid #fff;
     font-weight: bold;
+}
+
+/* Navigation hover */
+.header-navigation nav a:hover {
+    text-decoration: underline;
 }
 
 /*_____________________________________ Hero _________________________________________*/
