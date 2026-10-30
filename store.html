@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rainy Days - Outdoor clothing and gear">
+
+    <!-- Page title and favicon -->
+    <title>Rainy Days | Store</title>
+    <link rel="icon" href="../Assignment/Fav icons/favicon-32x32.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!--_____________________________________ Accessibility _____________________________________-->
+
+    <!-- Allows keyboard users to skip repeated navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+
+    <!--_____________________________________ Header _____________________________________-->
+
+    <header>
+
+        <!-- Header top -->
+        <div class="header-top">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo" aria-label="Rainy Days home">
+                <img src="images/Rainy days/RainyDays_Logo.png" alt="">
+            </a>
+
+            <!-- Search bar -->
+            <form class="search-bar" role="search" action="store.html" method="get">
+                <label class="visually-hidden" for="site-search">Search products</label>
+
+                <input
+                    type="search"
+                    id="site-search"
+                    name="q"
+                    placeholder="Search products..."
+                >
+
+                <button type="submit" aria-label="Search">
+                    <span aria-hidden="true">⌕</span>
+                </button>
+            </form>
+
+            <!-- Header icons -->
+            <div class="header-icons">
+
+                <!-- Shopping cart -->
+                <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+                    <img src="images/shopping-cart.svg" alt="">
+                </a>
+
+                <!-- User profile -->
+                <a href="profile.html" class="profile-icon" aria-label="Your profile">
+                    <img src="images/circle-user-round.svg" alt="">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Header divider -->
+        <div class="divider" aria-hidden="true"></div>
+
+        <!-- Main navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html" class="active" aria-current="page">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!--_____________________________________ Main Content _____________________________________-->
+
+    <main id="main-content">
+
+        <!--_____________________________________ Store Hero _____________________________________-->
+
+        <section class="hero" aria-labelledby="hero-heading">
+
+            <!-- Hero image -->
+            <img
+                src="images/Hero-Image-Store.jpg"
+                alt="Hikers exploring the mountains"
+            >
+
+            <!-- Hero text -->
+            <div class="hero-text">
+                <h1 id="hero-heading">Find Your Next Adventure</h1>
+                <p>Discover jackets made for every journey, in any weather.</p>
+            </div>
+
+        </section>
+
+
+        <!--_____________________________________ Store Products _____________________________________-->
+
+        <section class="store-page" aria-labelledby="store-heading">
+
+            <!-- Section heading -->
+            <h2 id="store-heading">Shop All Jackets</h2>
+            <p>Explore our collection of jackets made for every adventure.</p>
+
+            <!-- Store filters -->
+            <div class="store-filters">
+                <button type="button">All Jackets</button>
+                <button type="button">Men</button>
+                <button type="button">Women</button>
+                <button type="button">Unisex</button>
+            </div>
+
+            <!-- Product count -->
+            <p class="product-count">Showing 8 products</p>
+
+            <!-- Store content -->
+            <div class="store-content">
+
+                <!-- Product grid -->
+                <div class="product-grid">
+
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket1.jpg" alt="Orange rain jacket">
+
+                        <div class="product-info">
+                            <h3>Stormbreaker Jacket</h3>
+                            <p>Waterproof outdoor jacket</p>
+                            <p class="product-price">1 499 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket2.jpg" alt="Blue rain jacket">
+
+                        <div class="product-info">
+                            <h3>Mountain Explorer</h3>
+                            <p>Lightweight hiking jacket</p>
+                            <p class="product-price">1 299 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket3.jpg" alt="Black outdoor jacket">
+
+                        <div class="product-info">
+                            <h3>Urban Shield</h3>
+                            <p>Everyday waterproof jacket</p>
+                            <p class="product-price">1 199 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket4.jpg" alt="Green hiking jacket">
+
+                        <div class="product-info">
+                            <h3>Forest Trekker</h3>
+                            <p>Durable adventure jacket</p>
+                            <p class="product-price">1 599 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket5.jpg" alt="Red rain jacket">
+
+                        <div class="product-info">
+                            <h3>Rain Runner</h3>
+                            <p>Comfortable everyday rainwear</p>
+                            <p class="product-price">999 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket6.jpg" alt="Grey outdoor jacket">
+
+                        <div class="product-info">
+                            <h3>Summit Pro</h3>
+                            <p>Weather-resistant hiking jacket</p>
+                            <p class="product-price">1 899 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 7 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket7.jpg" alt="Yellow rain jacket">
+
+                        <div class="product-info">
+                            <h3>Trail Explorer</h3>
+                            <p>Lightweight waterproof jacket</p>
+                            <p class="product-price">1 399 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 8 -->
+                    <article class="product-card">
+                        <img src="images/Rainy days/RainyDays_Jacket8.jpg" alt="Navy blue jacket">
+
+                        <div class="product-info">
+                            <h3>Coastal Defender</h3>
+                            <p>Windproof coastal jacket</p>
+                            <p class="product-price">1 699 NOK</p>
+                            <a href="product.html" class="view-button">View Product</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!--_____________________________________ Footer _____________________________________-->
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Rainy Days. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
