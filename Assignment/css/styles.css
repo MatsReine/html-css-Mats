@@ -21,10 +21,21 @@ main {
     flex: 1;
 }
 
-/* Header */
+/*_____________________________________ Header _____________________________________*/
 header {
     padding: 10px 20px;
-    background-color: #0A3641;
+    background:
+        radial-gradient(
+            ellipse at 15% 10%,
+            #31938c 0%,
+            transparent 58%
+        ),
+        radial-gradient(
+            ellipse at 85% 90%,
+            #216e73 0%,
+            transparent 65%
+        ),
+        #0A3641;
 }
 
 .header-top {
@@ -33,7 +44,7 @@ header {
     align-items: center;
 }
 
-/* Logo */
+/*_____________________________________ Logo _____________________________________*/
 .logo {
     display: flex;
     align-items: center;
@@ -47,7 +58,7 @@ header {
     filter: brightness(0) invert(1);
 }
 
-/* Search bar */
+/*_____________________________________ Search bar _____________________________________*/
 .search-bar {
     display: flex;
     align-items: center;
@@ -72,7 +83,7 @@ header {
     font-size: 24px;
 }
 
-/* Header icons */
+/*_____________________________________ Header icons _____________________________________*/
 .header-icons {
     display: flex;
     align-items: center;
@@ -86,14 +97,14 @@ header {
     filter: brightness(0) invert(1);
 }
 
-/* Divider */
+/*_____________________________________ header divider __________________________________*/
 .divider {
     height: 1px;
     margin: 15px -20px 0;
     background-color: #19788da6;
 }
 
-/* Navigation */
+/*_____________________________________ Navigation _____________________________________*/
 header nav {
     margin-top: 10px;
     margin-bottom: 3px;
@@ -118,7 +129,7 @@ header nav a.active {
     border-bottom: 2px solid #fff;
 }
 
-/* Hero */
+/*_____________________________________ Hero _________________________________________*/
 .hero {
     position: relative;
 }
@@ -138,7 +149,7 @@ header nav a.active {
     object-fit: cover;
 }
 
-/* Hero text and button: shared styles */
+/*_____________________________________ Hero text and button ______________________________*/
 .hero-text,
 .hero-button {
     position: absolute;
@@ -163,7 +174,11 @@ header nav a.active {
     left: 160px;
     transform: translateX(-50%);
 
-    background-color: #0A3641;
+    background: linear-gradient(
+        to bottom,
+        #19788d,
+        #0A3641
+    );
     color: white;
     text-decoration: none;
 
@@ -181,15 +196,16 @@ header nav a.active {
     background-color: #19788d;
 }
 
-/* Featured products */
-.featured-products {
+/*_____________________________________ Featured products ___________________________________*/
+.featured-products,
+.related-products {
     margin: 30px 20px;
     padding: 10px;
     border: 1px solid #fff;
     color: #0A3641;
 }
 
-/* Section heading */
+/*_____________________________________ Section heading _____________________________________*/
 .section-heading {
     display: flex;
     justify-content: space-between;
@@ -214,14 +230,14 @@ header nav a.active {
     text-decoration: underline;
 }
 
-/* product grid */
+/*_____________________________________ Product grid _____________________________________*/
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
 }
 
-/* Product card */
+/*_____________________________________ Product card _____________________________________*/
 .product-card {
     display: flex;
     flex-direction: column;
@@ -264,27 +280,72 @@ header nav a.active {
     font-size: 14px;
 }
 
-.cart-button {
+.view-button,
+.add-to-cart-button {
+    font-family: 'Montserrat', sans-serif;
     display:block;
-    margin-top: auto;
     padding: 10px 5px;
-    background-color: #0A3641;
     border-radius: 4px;
     color: #fff;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
+
+    margin-top: auto;
+        background: linear-gradient(
+        to bottom,
+        #19788d,
+        #0A3641
+    );
 }
 
-.cart-button:hover {
+.view-button:hover,
+.add-to-cart-button:hover {
     background-color: #19788d;
 }
 
+/*_____________________________________ Product page _______________________________*/
+.product-page {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
-/* Footer */
+.product-page img {
+    display: flex;
+    width: 300px;
+    height: 400px;
+    align-self: left;
+}
+
+.product-page h1 {
+    color: #0A3641;
+}
+
+.product-page .product-image,
+.product-page .product-info {
+    flex: 1;
+    min-width: 0;
+}
+
+/*_____________________________________ Footer _____________________________________*/
 .site-footer {
     padding: 20px;
-    background-color: #0A3641;
+    background:
+        radial-gradient(
+            ellipse at 15% 10%,
+            #31938c 0%,
+            transparent 58%
+        ),
+        radial-gradient(
+            ellipse at 85% 90%,
+            #216e73 0%,
+            transparent 65%
+        ),
+        #0A3641;
     text-align: center;
 }
 
