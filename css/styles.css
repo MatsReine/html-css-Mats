@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+main {
+    flex: 1;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
@@ -18,14 +22,17 @@ h2 {
     color: #0A3641;
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0A3641;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-}
-
-main {
-    flex: 1;
 }
 
 /*_____________________________________ Header _____________________________________*/
@@ -171,7 +178,6 @@ header {
     object-fit: cover;
 }
 
-/*_____________________________________ Hero text and button ______________________________*/
 .hero-text,
 .hero-button {
     position: absolute;
@@ -207,11 +213,7 @@ header {
     font-weight: 700;
     text-decoration: none;
     transform: translateX(-50%);
-    transition: background-color 0.3s ease;
-}
-
-.hero-button:hover {
-    background-color: #19788d;
+    transition: filter 0.3s ease;
 }
 
 /*_____________________________________ Featured products ___________________________________*/
@@ -239,6 +241,8 @@ header {
 
 .view-all {
     color: #0A3641;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -251,7 +255,7 @@ header {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
+    gap: 20px;
 }
 
 /*_____________________________________ Product card _____________________________________*/
@@ -270,7 +274,13 @@ header {
     display: block;
     width: 100%;
     height: 170px;
-    background-color: #f1eded;
+     background: linear-gradient(
+        to right,
+        #acacac,
+        #f7f6f6,
+        #f7f6f6,
+        #acacac
+    );
     object-fit: contain;
 }
 
@@ -282,8 +292,7 @@ header {
 }
 
 .product-info h3 {
-    margin: 0 0 4px;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 4px; 
     font-size: 14px;
 }
 
@@ -292,9 +301,12 @@ header {
     font-size: 14px;
 }
 
-.product-price {
-    font-size: 14px;
+.product-info .product-price {
+    font-size: 24px;
     font-weight: 600;
+    margin-bottom: 16px;
+    color: #0A3641;
+    
 }
 
 .view-button,
@@ -313,15 +325,6 @@ header {
     font-size: 14px;
     text-align: center;
     text-decoration: none;
-}
-
-.view-button:hover,
-.add-to-cart-button:hover {
-    background: linear-gradient(
-        to bottom,
-        #2a9aaf,
-        #19788d
-    );
 }
 
 /*_____________________________________ Product page _______________________________*/
@@ -464,6 +467,104 @@ header {
     font-size: 14px;
 }
 
+/*_____________________________________ Shopping Cart _____________________________________*/
+.cart-page {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.cart-page h1 {
+    margin-bottom: 40px;
+    color: #0A3641;
+}
+
+/* Product */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cart-item img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    background: #f1eded;
+    border-radius: 6px;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-info h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.cart-item-info p {
+    margin: 5px 0;
+}
+
+.cart-item-info .cart-price {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+/* Quantity */
+
+.cart-quantity {
+    padding-right: 20px;
+}
+
+/* Total */
+
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.cart-total p {
+    font-size: 22px;
+}
+
+/* Buttons */
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.cart-back-button,
+.cart-checkout-button {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cart-back-button {
+    color: #0A3641;
+    border: 1px solid #0A3641;
+}
+
+.cart-checkout-button {
+    color: #fff;
+    background: linear-gradient(to bottom, #19788d, #0A3641);
+}
+
 /*_____________________________________ Footer _____________________________________*/
 .site-footer {
     padding: 25px 40px;
@@ -500,9 +601,7 @@ header {
 .footer-section h2 {
     margin: 0 0 10px;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    font-weight: 700;
 }
 
 .footer-section ul {
@@ -541,6 +640,24 @@ header {
     font-size: 11px;
     text-align: left;
 }
+
+/*_______________________Shared effects__________________________ */
+
+/* button transition animation */
+.hero-button,
+.view-button,
+.add-to-cart-button,
+.cart-checkout-button {
+    transition: filter 0.3s ease;
+}
+
+.hero-button:hover,
+.view-button:hover,
+.add-to-cart-button:hover,
+.cart-checkout-button:hover {
+    filter: brightness(1.25);
+}
+
 
 /* Accessibility: Skip link and visually hidden elements */
 .skip-link,
