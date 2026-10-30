@@ -66,9 +66,36 @@
 
             <div class="product-info">
                 <h1>Product name</h1>
-                <p>Product description goes here. This jacket is perfect for outdoor activities and provides excellent
+                <p>Sturdy and durable. This jacket is perfect for outdoor activities and provides excellent protection against the elements. It features a waterproof exterior, breathable fabric, and multiple pockets for convenience.</p>
                 <p class="product-price">Price: 1 499 kr</p>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <div class="size-option">
+                    <label for="size">Choose size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="extra-large">Extra Large</option>
+                    </select>
+                </div>
+                <fieldset class="color-selector">
+                    <legend>Choose color:</legend>
+
+                        <label>
+                            <input type="radio" name="jacket-color" value="orange" checked> 
+                                Orange
+                        </label>
+
+                        <label>
+                            <input type="radio" name="jacket-color" value="blue">
+                                Blue
+                        </label>
+
+                        <label>
+                            <input type="radio" name="jacket-color" value="black">  
+                                Black
+                        </label>
+                </fieldset>
+                <button class="add-to-cart-button" id="add-to-cart">Add to Cart</button>
             </div>
         </section>
         
