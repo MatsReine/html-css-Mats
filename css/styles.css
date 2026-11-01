@@ -368,7 +368,7 @@ header {
 
 /*_____________________________________ Product page _______________________________*/
 .product-page .product-image,
-.product-buttons {
+.product-page .product-info {
     flex: 1;
     min-width: 0;
 }
@@ -382,7 +382,7 @@ header {
     padding: 20px;
 }
 
-.product-page img {
+.product-page .product-image img {
     display: block;
     width: 100%;
     max-height: 450px;
