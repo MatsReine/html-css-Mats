@@ -1,5 +1,4 @@
 /*_____________________________________ General _____________________________________*/
-
 body {
     display: flex;
     flex-direction: column;
@@ -10,8 +9,6 @@ body {
 main {
     flex: 1;
 }
-
-/* Headings */
 
 h1,
 h2,
@@ -40,9 +37,7 @@ p {
     font-weight: 400;
 }
 
-
 /*_____________________________________ Header _____________________________________*/
-
 header {
     padding: 10px 20px;
     background:
@@ -57,9 +52,7 @@ header {
     align-items: center;
 }
 
-
 /*_____________________________________ Logo _____________________________________*/
-
 .logo {
     display: flex;
     align-items: center;
@@ -73,9 +66,7 @@ header {
     filter: brightness(0) invert(1);
 }
 
-
 /*_____________________________________ Search Bar _____________________________________*/
-
 .search-bar {
     display: flex;
     align-items: center;
@@ -100,9 +91,7 @@ header {
     cursor: pointer;
 }
 
-
 /*_____________________________________ Header Icons _____________________________________*/
-
 .header-icons {
     display: flex;
     align-items: center;
@@ -116,18 +105,14 @@ header {
     filter: brightness(0) invert(1);
 }
 
-
 /*_____________________________________ Header Divider _____________________________________*/
-
 .divider {
     height: 1px;
     margin: 15px -20px 0;
     background-color: #19788da6;
 }
 
-
 /*_____________________________________ Navigation _____________________________________*/
-
 .header-navigation {
     display: flex;
     justify-content: space-between;
@@ -161,9 +146,7 @@ header {
     text-decoration: underline;
 }
 
-
 /*_____________________________________ Hero _____________________________________*/
-
 .hero {
     position: relative;
 }
@@ -217,7 +200,6 @@ header {
 }
 
 /*_____________________________________ Featured Products _____________________________________*/
-
 .featured-products,
 .related-products {
     margin: 30px 20px;
@@ -226,9 +208,7 @@ header {
     color: #0A3641;
 }
 
-
 /*_____________________________________ Section Heading _____________________________________*/
-
 .section-heading {
     display: flex;
     justify-content: space-between;
@@ -254,18 +234,14 @@ header {
     text-decoration: underline;
 }
 
-
 /*_____________________________________ Product Grid _____________________________________*/
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
 }
 
-
 /*_____________________________________ Product Cards _____________________________________*/
-
 .product-card {
     display: flex;
     flex-direction: column;
@@ -315,9 +291,7 @@ header {
     font-weight: 600;
 }
 
-
 /*_____________________________________ Product Buttons _____________________________________*/
-
 .view-button,
 .add-to-cart-button {
     display: block;
@@ -332,9 +306,7 @@ header {
     text-decoration: none;
 }
 
-
 /*_____________________________________ Explore More _____________________________________*/
-
 .explore-section {
     max-width: 1200px;
     margin: 70px auto;
@@ -393,6 +365,7 @@ header {
     font-weight: 700;
     text-decoration: none;
 }
+
 /*_____________________________________ Product page _______________________________*/
 .product-page .product-image,
 .product-buttons {
@@ -498,7 +471,6 @@ header {
 }
 
 /*_____________________________________ Store Page _____________________________________*/
-
 .store-page {
     max-width: 1200px;
     margin: 40px auto;
@@ -534,7 +506,6 @@ header {
 }
 
 /*_____________________________________ Shopping Cart _____________________________________*/
-
 .cart-page,
 .checkout-page {
     max-width: 1100px;
@@ -546,8 +517,6 @@ header {
     margin-bottom: 40px;
     color: #0A3641;
 }
-
-/* Cart Item */
 
 .cart-item {
     display: flex;
@@ -585,13 +554,9 @@ header {
     font-weight: 700;
 }
 
-/* Quantity */
-
 .cart-quantity {
     padding-right: 20px;
 }
-
-/* Total */
 
 .cart-total {
     display: flex;
@@ -604,8 +569,6 @@ header {
 .cart-total p {
     font-size: 22px;
 }
-
-/* Cart Buttons */
 
 .cart-actions {
     display: flex;
@@ -634,15 +597,12 @@ header {
 }
 
 /*_____________________________________ Checkout _____________________________________*/
-
 .checkout-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     margin-top: 30px;
 }
-
-/* Checkout Form and Order Summary */
 
 .checkout-form,
 .order-summary {
@@ -683,7 +643,6 @@ header {
     cursor: pointer;
 }
 
-/* Card Details */
 
 .card-details-row {
     display: flex;
@@ -705,8 +664,6 @@ header {
     width: 100%;
 }
 
-/* Order Summary */
-
 .order-summary {
     align-self: start;
 }
@@ -724,7 +681,6 @@ header {
 }
 
 /*_____________________________________ Footer _____________________________________*/
-
 .site-footer {
     padding: 25px 40px;
     background:
@@ -795,7 +751,6 @@ header {
 }
 
 /*_____________________________________ Shared Button Effects _____________________________________*/
-
 .hero-button,
 .view-button,
 .add-to-cart-button,
@@ -812,9 +767,7 @@ header {
     filter: brightness(1.25);
 }
 
-
 /*_____________________________________ Accessibility _____________________________________*/
-
 .skip-link,
 .visually-hidden {
     position: absolute;
@@ -846,7 +799,6 @@ header {
 }
 
 /*_____________________________________ Responsive Design _____________________________________*/
-
 @media (max-width: 700px) {
     .checkout-content {
         grid-template-columns: 1fr;
