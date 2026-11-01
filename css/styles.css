@@ -1,3 +1,5 @@
+/*_____________________________________ General _____________________________________*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,15 @@ body {
 
 main {
     flex: 1;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
@@ -23,31 +34,20 @@ h3 {
     color: #0A3641;
 }
 
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
 
+
 /*_____________________________________ Header _____________________________________*/
+
 header {
     padding: 10px 20px;
     background:
-        radial-gradient(
-            ellipse at 15% 10%,
-            #31938c 0%,
-            transparent 58%
-        ),
-        radial-gradient(
-            ellipse at 85% 90%,
-            #216e73 0%,
-            transparent 65%
-        ),
+        radial-gradient(ellipse at 15% 10%, #31938c 0%, transparent 58%),
+        radial-gradient(ellipse at 85% 90%, #216e73 0%, transparent 65%),
         #0A3641;
 }
 
@@ -57,7 +57,9 @@ header {
     align-items: center;
 }
 
+
 /*_____________________________________ Logo _____________________________________*/
+
 .logo {
     display: flex;
     align-items: center;
@@ -71,7 +73,9 @@ header {
     filter: brightness(0) invert(1);
 }
 
-/*_____________________________________ Search bar _____________________________________*/
+
+/*_____________________________________ Search Bar _____________________________________*/
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -96,7 +100,9 @@ header {
     cursor: pointer;
 }
 
-/*_____________________________________ Header icons _____________________________________*/
+
+/*_____________________________________ Header Icons _____________________________________*/
+
 .header-icons {
     display: flex;
     align-items: center;
@@ -110,25 +116,26 @@ header {
     filter: brightness(0) invert(1);
 }
 
-/*_____________________________________ Header divider _____________________________________*/
+
+/*_____________________________________ Header Divider _____________________________________*/
+
 .divider {
     height: 1px;
     margin: 15px -20px 0;
     background-color: #19788da6;
 }
 
+
 /*_____________________________________ Navigation _____________________________________*/
-/* Navigation container */
+
 .header-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 3px;
+    margin: 13px 0 3px;
 }
 
-/* Navigation lists */
 .header-navigation nav ul {
     display: flex;
     align-items: center;
@@ -138,7 +145,6 @@ header {
     list-style: none;
 }
 
-/* Navigation links */
 .header-navigation nav a {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -146,18 +152,18 @@ header {
     text-decoration: none;
 }
 
-/* Active page */
 .header-navigation nav a.active {
     border-bottom: 2px solid #fff;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-/* Navigation hover */
 .header-navigation nav a:hover {
     text-decoration: underline;
 }
 
-/*_____________________________________ Hero _________________________________________*/
+
+/*_____________________________________ Hero _____________________________________*/
+
 .hero {
     position: relative;
 }
@@ -200,22 +206,18 @@ header {
     bottom: 30px;
     left: 160px;
     padding: 14px 28px;
-    background: linear-gradient(
-        to bottom,
-        #19788d,
-        #0A3641
-    );
+    background: linear-gradient(to bottom, #19788d, #0A3641);
     border-radius: 6px;
-    color: white;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     transform: translateX(-50%);
-    transition: filter 0.3s ease;
 }
 
-/*_____________________________________ Featured products ___________________________________*/
+/*_____________________________________ Featured Products _____________________________________*/
+
 .featured-products,
 .related-products {
     margin: 30px 20px;
@@ -224,7 +226,9 @@ header {
     color: #0A3641;
 }
 
-/*_____________________________________ Section heading _____________________________________*/
+
+/*_____________________________________ Section Heading _____________________________________*/
+
 .section-heading {
     display: flex;
     justify-content: space-between;
@@ -242,7 +246,7 @@ header {
     color: #0A3641;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -250,14 +254,18 @@ header {
     text-decoration: underline;
 }
 
-/*_____________________________________ Product grid _____________________________________*/
+
+/*_____________________________________ Product Grid _____________________________________*/
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
 }
 
-/*_____________________________________ Product card _____________________________________*/
+
+/*_____________________________________ Product Cards _____________________________________*/
+
 .product-card {
     display: flex;
     flex-direction: column;
@@ -273,7 +281,7 @@ header {
     display: block;
     width: 100%;
     height: 170px;
-     background: linear-gradient(
+    background: linear-gradient(
         to right,
         #acacac,
         #f7f6f6,
@@ -291,7 +299,7 @@ header {
 }
 
 .product-info h3 {
-    margin: 0 0 4px; 
+    margin: 0 0 4px;
     font-size: 14px;
 }
 
@@ -301,23 +309,21 @@ header {
 }
 
 .product-info .product-price {
-    font-size: 24px;
-    font-weight: 600;
     margin-bottom: 16px;
     color: #0A3641;
-    
+    font-size: 24px;
+    font-weight: 600;
 }
+
+
+/*_____________________________________ Product Buttons _____________________________________*/
 
 .view-button,
 .add-to-cart-button {
     display: block;
     margin-top: auto;
     padding: 10px 5px;
-    background: linear-gradient(
-        to bottom,
-        #19788d,
-        #0A3641
-    );
+    background: linear-gradient(to bottom, #19788d, #0A3641);
     border-radius: 4px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -325,6 +331,7 @@ header {
     text-align: center;
     text-decoration: none;
 }
+
 
 /*_____________________________________ Explore More _____________________________________*/
 
@@ -367,8 +374,8 @@ header {
 }
 
 .explore-info h2 {
-    font-size: 36px;
     margin: 20px 0;
+    font-size: 36px;
 }
 
 .explore-info p {
@@ -380,38 +387,12 @@ header {
     margin-top: 20px;
     padding: 14px 28px;
     background: linear-gradient(to bottom, #19788d, #0A3641);
+    border-radius: 6px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    border-radius: 6px;
 }
-
-/* Mobile */
-
-@media (max-width: 600px) {
-    .explore-section {
-        margin: 30px auto;
-        padding: 0 20px;
-    }
-
-    .explore-item {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
-        padding: 30px 0;
-    }
-
-    .explore-item img {
-        width: 100%;
-        height: 230px;
-    }
-
-    .explore-info h2 {
-        font-size: 26px;
-    }
-}
-
 /*_____________________________________ Product page _______________________________*/
 .product-page .product-image,
 .product-buttons {
@@ -553,7 +534,9 @@ header {
 }
 
 /*_____________________________________ Shopping Cart _____________________________________*/
-.cart-page {
+
+.cart-page,
+.checkout-page {
     max-width: 1100px;
     margin: 60px auto;
     padding: 0 40px;
@@ -564,7 +547,7 @@ header {
     color: #0A3641;
 }
 
-/* Product */
+/* Cart Item */
 
 .cart-item {
     display: flex;
@@ -588,8 +571,8 @@ header {
 }
 
 .cart-item-info h2 {
-    font-size: 22px;
     margin-bottom: 12px;
+    font-size: 22px;
 }
 
 .cart-item-info p {
@@ -597,9 +580,9 @@ header {
 }
 
 .cart-item-info .cart-price {
+    margin-top: 25px;
     font-size: 24px;
     font-weight: 700;
-    margin-top: 25px;
 }
 
 /* Quantity */
@@ -622,7 +605,7 @@ header {
     font-size: 22px;
 }
 
-/* Buttons */
+/* Cart Buttons */
 
 .cart-actions {
     display: flex;
@@ -652,18 +635,14 @@ header {
 
 /*_____________________________________ Checkout _____________________________________*/
 
-.checkout-page {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 0 40px;
-}
-
 .checkout-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     margin-top: 30px;
 }
+
+/* Checkout Form and Order Summary */
 
 .checkout-form,
 .order-summary {
@@ -698,7 +677,7 @@ header {
     margin-top: 20px;
     padding: 14px;
     background: #0A3641;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -722,9 +701,11 @@ header {
 }
 
 .card-details-row input {
-    width: 100%;
     box-sizing: border-box;
+    width: 100%;
 }
+
+/* Order Summary */
 
 .order-summary {
     align-self: start;
@@ -742,13 +723,8 @@ header {
     color: #0A3641;
 }
 
-@media (max-width: 700px) {
-    .checkout-content {
-        grid-template-columns: 1fr;
-    }
-}
-
 /*_____________________________________ Footer _____________________________________*/
+
 .site-footer {
     padding: 25px 40px;
     background:
@@ -758,7 +734,6 @@ header {
     color: #fff;
 }
 
-/* Footer main content */
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -766,7 +741,6 @@ header {
     gap: 40px;
 }
 
-/* Footer logo */
 .footer-logo img {
     display: block;
     width: 150px;
@@ -774,13 +748,11 @@ header {
     filter: brightness(0) invert(1);
 }
 
-/* Footer navigation */
 .footer-navigation {
     display: flex;
     gap: 70px;
 }
 
-/* Footer sections */
 .footer-section h2 {
     margin: 0 0 10px;
     color: #fff;
@@ -809,14 +781,12 @@ header {
     text-decoration: underline;
 }
 
-/* Footer divider */
 .footer-divider {
     height: 1px;
     margin: 25px 0 15px;
     background-color: #19788da6;
 }
 
-/* Footer bottom */
 .footer-bottom p {
     margin: 0;
     color: #d3e5e8;
@@ -824,13 +794,12 @@ header {
     text-align: left;
 }
 
-/*_______________________Shared effects__________________________ */
+/*_____________________________________ Shared Button Effects _____________________________________*/
 
-/* button transition animation */
 .hero-button,
 .view-button,
 .add-to-cart-button,
-.cart-checkout-button
+.cart-checkout-button,
 .explore-button {
     transition: filter 0.3s ease;
 }
@@ -844,7 +813,8 @@ header {
 }
 
 
-/* Accessibility: Skip link and visually hidden elements */
+/*_____________________________________ Accessibility _____________________________________*/
+
 .skip-link,
 .visually-hidden {
     position: absolute;
@@ -875,8 +845,17 @@ header {
     white-space: normal;
 }
 
-/*Media*/
+/*_____________________________________ Responsive Design _____________________________________*/
+
+@media (max-width: 700px) {
+    .checkout-content {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 600px) {
+
+    /* General */
 
     h1 {
         font-size: 30px;
@@ -966,12 +945,35 @@ header {
         flex-wrap: wrap;
     }
 
+    /* Explore More */
+
+    .explore-section {
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .explore-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .explore-item img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .explore-info h2 {
+        font-size: 26px;
+    }
+
     /* Cart */
 
     .cart-page,
     .checkout-page {
-        padding: 0 20px;
         margin: 30px auto;
+        padding: 0 20px;
     }
 
     .cart-item {
@@ -1001,7 +1003,6 @@ header {
     /* Checkout */
 
     .checkout-content {
-        grid-template-columns: 1fr;
         gap: 20px;
     }
 

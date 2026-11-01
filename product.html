@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rainy Days offers outdoor clothing and jackets for every kind of weather.">
+
+    <!-- Page title and favicon -->
     <title>Rainy Days | Outdoor Clothing</title>
-    <link rel="icon" href="../Assignment/Fav icons/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="Fav icons/favicon-32x32.png" type="image/png">
+
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Allows keyboard users to skip repeated navigation -->
+
+    <!--_____________________________________ Accessibility _____________________________________-->
+
     <a class="skip-link" href="#main-content">
         Skip to main content
     </a>
+
+
+    <!--_____________________________________ Header _____________________________________-->
 
     <header>
 
@@ -31,12 +44,7 @@
             <form class="search-bar" role="search" action="store.html" method="get">
                 <label class="visually-hidden" for="site-search">Search products</label>
 
-                <input
-                    type="search"
-                    id="site-search"
-                    name="q"
-                    placeholder="Search products..."
-                >
+                <input type="search" id="site-search" name="q" placeholder="Search products...">
 
                 <button type="submit" aria-label="Search">
                     <span aria-hidden="true">⌕</span>
@@ -46,12 +54,10 @@
             <!-- Header icons -->
             <div class="header-icons">
 
-                <!-- Shopping cart -->
                 <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
                     <img src="images/shopping-cart.svg" alt="">
                 </a>
 
-                <!-- User profile -->
                 <a href="profile.html" class="profile-icon" aria-label="Your profile">
                     <img src="images/circle-user-round.svg" alt="">
                 </a>
@@ -61,8 +67,8 @@
 
         <!-- Header divider -->
         <div class="divider" aria-hidden="true"></div>
-        
-                <!-- Header navigation -->
+
+        <!-- Header navigation -->
         <div class="header-navigation">
 
             <!-- Product categories -->
@@ -79,7 +85,9 @@
             <!-- Main navigation -->
             <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="index.html" class="active" aria-current="page">Home</a>
+                    </li>
                     <li><a href="store.html">Store</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About us</a></li>
@@ -87,103 +95,136 @@
             </nav>
 
         </div>
-
     </header>
 
     <main id="main-content">
-        <section class="product-page"> 
-            <div class="product-image">
-                <img src="images/Rainy days/RainyDays_Jacket1.jpg" alt="Product jacket">
+
+    <!--_____________________________________ Product Details _____________________________________-->
+
+    <section class="product-page">
+
+        <!-- Product image -->
+        <div class="product-image">
+            <img src="images/Rainy days/RainyDays_Jacket1.jpg" alt="Product jacket">
+        </div>
+
+        <!-- Product information -->
+        <div class="product-info">
+
+            <h1>Product name</h1>
+
+            <p>
+                Sturdy and durable. This jacket is perfect for outdoor activities
+                and provides excellent protection against the elements. It features
+                a waterproof exterior, breathable fabric, and multiple pockets
+                for convenience.
+            </p>
+
+            <p class="product-price">Price: 1 499 kr</p>
+
+            <!-- Size selection -->
+            <div class="size-option">
+                <label for="size">Choose size:</label>
+
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extra-large">Extra Large</option>
+                </select>
             </div>
 
-            <div class="product-info">
-                <h1>Product name</h1>
-                <p>Sturdy and durable. This jacket is perfect for outdoor activities and provides excellent protection against the elements. It features a waterproof exterior, breathable fabric, and multiple pockets for convenience.</p>
-                <p class="product-price">Price: 1 499 kr</p>
-                <div class="size-option">
-                    <label for="size">Choose size:</label>
-                    <select id="size" name="size">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="extra-large">Extra Large</option>
-                    </select>
+            <!-- Color selection -->
+            <fieldset class="color-selector">
+                <legend>Choose color:</legend>
+
+                <label>
+                    <input type="radio" name="jacket-color" value="orange" checked>
+                    Orange
+                </label>
+
+                <label>
+                    <input type="radio" name="jacket-color" value="blue">
+                    Blue
+                </label>
+
+                <label>
+                    <input type="radio" name="jacket-color" value="black">
+                    Black
+                </label>
+            </fieldset>
+
+            <button type="button" class="add-to-cart-button" id="add-to-cart">
+                Add to Cart
+            </button>
+
+        </div>
+    </section>
+
+
+    <!--_____________________________________ Related Products _____________________________________-->
+
+    <section class="related-products" aria-labelledby="related-products-heading">
+
+        <div class="section-heading">
+            <h2 id="related-products-heading">Related Products</h2>
+            <a href="store.html" class="view-all">View more</a>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <article class="product-card">
+                <img src="images/Rainy days/RainyDays_Jacket5.jpg" alt="Product 1 jacket">
+
+                <div class="product-info">
+                    <h3>Product 1</h3>
+                    <p>Waterproof and warm</p>
+                    <p class="product-price">2 499 kr</p>
+                    <a href="product.html" class="view-button">View Product</a>
                 </div>
-                <fieldset class="color-selector">
-                    <legend>Choose color:</legend>
+            </article>
 
-                        <label>
-                            <input type="radio" name="jacket-color" value="orange" checked> 
-                                Orange
-                        </label>
+            <!-- Product 2 -->
+            <article class="product-card">
+                <img src="images/Rainy days/RainyDays_Jacket6.jpg" alt="Product 2 jacket">
 
-                        <label>
-                            <input type="radio" name="jacket-color" value="blue">
-                                Blue
-                        </label>
+                <div class="product-info">
+                    <h3>Product 2</h3>
+                    <p>Waterproof and warm</p>
+                    <p class="product-price">1 499 kr</p>
+                    <a href="product.html" class="view-button">View Product</a>
+                </div>
+            </article>
 
-                        <label>
-                            <input type="radio" name="jacket-color" value="black">  
-                                Black
-                        </label>
-                </fieldset>
-                <button class="add-to-cart-button" id="add-to-cart">Add to Cart</button>
-            </div>
-        </section>
-        
-        <section class="related-products" aria-labelledby="related-products-heading">
-            <div class="section-heading">
-                <h2 id="related-products-heading">Related Products</h2>
-                <a href="store.html" class="view-all">View more</a>
-            </div>
+            <!-- Product 3 -->
+            <article class="product-card">
+                <img src="images/Rainy days/RainyDays_Jacket7.jpg" alt="Product 3 jacket">
 
-            <div class="product-grid">
-                <article class="product-card">
-                    <img src="images/Rainy days/RainyDays_Jacket5.jpg" alt="Product 1 jacket">
+                <div class="product-info">
+                    <h3>Product 3</h3>
+                    <p>Cool and sporty</p>
+                    <p class="product-price">1 359 kr</p>
+                    <a href="product.html" class="view-button">View Product</a>
+                </div>
+            </article>
 
-                    <div class="product-info">
-                        <h3>Product 1</h3>
-                        <p>Waterproof and warm</p>
-                        <p class="product-price">2 499 kr</p>
-                        <a href="product.html" class="view-button">View Product</a>
-                    </div>
-                </article>
+            <!-- Product 4 -->
+            <article class="product-card">
+                <img src="images/Rainy days/RainyDays_Jacket4.jpg" alt="Product 4 jacket">
 
-                <article class="product-card">
-                    <img src="images/Rainy days/RainyDays_Jacket6.jpg" alt="Product 2 jacket">
+                <div class="product-info">
+                    <h3>Product 4</h3>
+                    <p>Windproof and lightweight</p>
+                    <p class="product-price">699 kr</p>
+                    <a href="product.html" class="view-button">View Product</a>
+                </div>
+            </article>
 
-                    <div class="product-info">
-                        <h3>Product 2</h3>
-                        <p>Waterproof and warm</p> 
-                        <p class="product-price">1 499 kr</p>
-                        <a href="product.html" class="view-button">View Product</a>
-                    </div>
-                </article>
+        </div>
+    </section>
 
-                <article class="product-card">
-                    <img src="images/Rainy days/RainyDays_Jacket7.jpg" alt="Product 3 jacket">
-
-                    <div class="product-info">
-                        <h3>Product 3</h3>
-                        <p>Cool and sporty</p>
-                        <p class="product-price">1 359 kr</p>
-                        <a href="product.html" class="view-button">View Product</a>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/Rainy days/RainyDays_Jacket4.jpg" alt="Product 4 jacket">
-
-                    <div class="product-info">
-                        <h3>Product 4</h3>
-                        <p>Windproof and lightweight</p>
-                        <p class="product-price">699 kr</p>
-                        <a href="product.html" class="view-button">View Product</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+</main>
 
     <footer class="site-footer">
 
