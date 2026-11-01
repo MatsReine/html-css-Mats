@@ -326,9 +326,95 @@ header {
     text-decoration: none;
 }
 
+/*_____________________________________ Explore More _____________________________________*/
+
+.explore-section {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 40px;
+}
+
+.explore-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.explore-item:last-child {
+    border-bottom: none;
+}
+
+.explore-item img {
+    width: 55%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.explore-info {
+    flex: 1;
+}
+
+.explore-info .explore-category {
+    color: #19788d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.explore-info h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.explore-info p {
+    line-height: 1.6;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: linear-gradient(to bottom, #19788d, #0A3641);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .explore-section {
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .explore-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .explore-item img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .explore-info h2 {
+        font-size: 26px;
+    }
+}
+
 /*_____________________________________ Product page _______________________________*/
 .product-page .product-image,
-.product-page .product-info {
+.product-buttons {
     flex: 1;
     min-width: 0;
 }
@@ -744,14 +830,16 @@ header {
 .hero-button,
 .view-button,
 .add-to-cart-button,
-.cart-checkout-button {
+.cart-checkout-button
+.explore-button {
     transition: filter 0.3s ease;
 }
 
 .hero-button:hover,
 .view-button:hover,
 .add-to-cart-button:hover,
-.cart-checkout-button:hover {
+.cart-checkout-button:hover,
+.explore-button:hover {
     filter: brightness(1.25);
 }
 
