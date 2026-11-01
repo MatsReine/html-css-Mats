@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rainy Days offers outdoor clothing and jackets for every kind of weather.">
+    <title>Rainy Days | Outdoor Clothing</title>
+    <link rel="icon" href="../Assignment/Fav icons/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Allows keyboard users to skip repeated navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header>
+
+        <!-- Header top -->
+        <div class="header-top">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo" aria-label="Rainy Days home">
+                <img src="images/Rainy days/RainyDays_Logo.png" alt="">
+            </a>
+
+            <!-- Search bar -->
+            <form class="search-bar" role="search" action="store.html" method="get">
+                <label class="visually-hidden" for="site-search">Search products</label>
+
+                <input
+                    type="search"
+                    id="site-search"
+                    name="q"
+                    placeholder="Search products..."
+                >
+
+                <button type="submit" aria-label="Search">
+                    <span aria-hidden="true">⌕</span>
+                </button>
+            </form>
+
+            <!-- Header icons -->
+            <div class="header-icons">
+
+                <!-- Shopping cart -->
+                <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+                    <img src="images/shopping-cart.svg" alt="">
+                </a>
+
+                <!-- User profile -->
+                <a href="profile.html" class="profile-icon" aria-label="Your profile">
+                    <img src="images/circle-user-round.svg" alt="">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Header divider -->
+        <div class="divider" aria-hidden="true"></div>
+        
+                <!-- Header navigation -->
+        <div class="header-navigation">
+
+            <!-- Product categories -->
+            <nav class="category-nav" aria-label="Product categories">
+                <ul>
+                    <li><a href="store.html">Women</a></li>
+                    <li><a href="store.html">Men</a></li>
+                    <li><a href="store.html">Children</a></li>
+                    <li><a href="store.html">Outdoor Gear</a></li>
+                    <li><a href="store.html">Outlet</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main id="main-content">
+    <section class="checkout-page">
+        <h1>Checkout</h1>
+
+        <div class="checkout-content">
+            <form class="checkout-form">
+                <h2>Customer Information</h2>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <h2>Shipping Address</h2>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+
+                <label for="postal-code">Postal Code</label>
+                <input type="text" id="postal-code" name="postal-code">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            
+                <h2>Card Details</h2>
+
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" id="card-name" name="card-name"
+                        autocomplete="cc-name">
+
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number"
+                        inputmode="numeric" autocomplete="cc-number"
+                        placeholder="1234 5678 9012 3456">
+
+                    <div class="card-details-row">
+                        <div>
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" name="expiry"
+                                placeholder="MM/YY" autocomplete="cc-exp">
+                        </div>
+
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv"
+                                inputmode="numeric" placeholder="123">
+                        </div>
+                    </div>
+                    <button type="submit">Place Order</button>
+            </form>
+
+            <aside class="order-summary">
+                <h2>Order Summary</h2>
+                <p>Rainy Days Jacket <span>1 299 kr</span></p>
+                <p>Shipping <span>Free</span></p>
+                <hr>
+                <p><strong>Total</strong> <strong>1 299 kr</strong></p>
+                <a href="cart.html">← Back to Cart</a>
+            </aside>
+        </div>
+    </section>
+</main>
+
+    <footer class="site-footer">
+
+    <!-- Footer main content -->
+    <div class="footer-content">
+
+        <!-- Footer logo -->
+        <a href="index.html" class="footer-logo" aria-label="Rainy Days home">
+            <img src="images/Rainy days/RainyDays_Logo.png" alt="">
+        </a>
+
+        <!-- Footer navigation -->
+        <nav class="footer-navigation" aria-label="Footer navigation">
+
+            <!-- Shop links -->
+            <div class="footer-section">
+                <h2>Shop</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer support links -->
+            <div class="footer-section">
+                <h2>Customer support</h2>
+                <ul>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="payment.html">Payment options</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Footer divider -->
+    <div class="footer-divider" aria-hidden="true"></div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Rainy Days. All rights reserved.</p>
+    </div>
+
+</footer>
+</body>
+</html>
